@@ -17,7 +17,7 @@
 header{
     max-width: 1440px;
     background: var(--bg-color);
-    padding: 2.8rem 5rem;
+    padding: 2.8rem 2rem;
 }
 
 /* Navbar */
@@ -80,6 +80,7 @@ nav a{
     color: white;
     font-size: 1.25rem;
     font-weight: 600;
+    width: 11.25rem;
 }
 
 .hero img{
@@ -87,7 +88,7 @@ nav a{
     border-radius: 8px;
 }
 
-/* For Smartphones */
+/* Small Devices */
 @media screen and (max-width: 576px) {
     header{
         padding: 2.8rem 0.25rem;
@@ -111,7 +112,7 @@ nav a{
     }
 }
 
-/* For Tablets */
+/* Medium Devices */
 
 @media screen and (min-width: 576px) and (max-width: 991.98px) {
     header{
@@ -128,6 +129,83 @@ nav a{
     }
 
     .hero-text{
-    margin: 0 0.25rem 1rem;
+        margin: 0 0.25rem 1rem;
+    }
+}
+
+/* Features Section */
+
+.feature{
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 4.2rem;
+    padding: 5rem 5rem 8rem;
+    align-items: center;
+}
+
+.feature-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.feature-image{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.feature-text h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--dark-3);
+}
+
+.of-our{
+    color: var(--dark-1);
+    font-weight: 700;
+}
+
+.feat{
+    color: var(--btn-color);
+    font-weight: 700;
+}
+
+.feature-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-text p{
+    font-weight: 400;
+    font-size: 0.90rem;
+    color: var(--dark-3);
+    line-height: 1.5rem;
+    margin: 1.75rem 0;
+}
+
+/* Media Query */
+/* Small devices */
+
+@media screen and (max-width: 576px) {
+    .feature{
+        grid-template-columns: 1fr;
+        padding: 2rem 2rem 3rem;
+    }
+
+    .feature-images{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature-image{
+        width: 100%;
+    }
+
+    .feature-text{
+        text-align: center;
+    }
+
+    .feature-text button{
+        margin-left: 28%;
+        /* width: 50%; */
     }
 }
