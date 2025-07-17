@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root{
+    --dark-1: #131313;
+    --dark-2: #424242;
+    --dark-3: #727272;
+    --btn-color: #FF900E;
+    --bg-color: rgba(255, 144, 14, 0.1);
+}
+
+header{
+    max-width: 1440px;
+    background: var(--bg-color);
+    padding: 2.8rem 5rem;
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.logo{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--dark-1);
+}
+
+.nav-links{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 3rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--dark-2);
+}
+
+/* Hero Section */
+
+.hero{
+    text-align: center;
+    /* margin: 0 5rem; */
+}
+
+.hero-text{
+    margin: 0 10rem 3rem;
+}
+
+.hero h1{
+    color: var(--dark-1);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.hero p{
+    color: var(--dark-3);
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    padding: 1.25rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--btn-color);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.hero img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* For Smartphones */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 2.8rem 0.25rem;
+    }
+
+    nav, .nav-links{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav a{
+        margin: 0.75rem 0;
+    }
+
+    .hero-text{
+    margin: 0 0.25rem 1rem;
+    }
+
+    .hero h1{
+        font-size: 3rem;
+    }
+}
+
+/* For Tablets */
+
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
+    header{
+        padding: 2.8rem 0.25rem;
+    }
+
+    nav, .nav-links{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav a{
+        margin: 0.5rem 0;
+    }
+
+    .hero-text{
+    margin: 0 0.25rem 1rem;
+    }
+}
