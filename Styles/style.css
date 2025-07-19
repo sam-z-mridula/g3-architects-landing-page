@@ -14,10 +14,31 @@
     --bg-color: rgba(255, 144, 14, 0.1);
 }
 
+/* Common Properties */
+
+.para{
+    color: var(--dark-3);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.btn{
+    padding: 1.25rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--btn-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 9.75rem;
+}
+
+/* Header Section */
+
 header{
     max-width: 1440px;
     background: var(--bg-color);
-    padding: 2.8rem 2rem;
+    padding: 2.8rem 4rem;
 }
 
 /* Navbar */
@@ -67,20 +88,7 @@ nav a{
 }
 
 .hero p{
-    color: var(--dark-3);
-    line-height: 1.5rem;
     margin-bottom: 2rem;
-}
-
-.btn{
-    padding: 1.25rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    background: var(--btn-color);
-    color: white;
-    font-size: 1.25rem;
-    font-weight: 600;
-    width: 11.25rem;
 }
 
 .hero img{
@@ -89,6 +97,7 @@ nav a{
 }
 
 /* Small Devices */
+
 @media screen and (max-width: 576px) {
     header{
         padding: 2.8rem 0.25rem;
@@ -139,7 +148,7 @@ nav a{
     display: grid;
     grid-template-columns: 1.25fr 1fr;
     gap: 4.2rem;
-    padding: 5rem 5rem 8rem;
+    padding: 5rem 6.75rem 3rem;
     align-items: center;
 }
 
@@ -176,10 +185,6 @@ nav a{
 }
 
 .feature-text p{
-    font-weight: 400;
-    font-size: 0.90rem;
-    color: var(--dark-3);
-    line-height: 1.5rem;
     margin: 1.75rem 0;
 }
 
@@ -207,5 +212,178 @@ nav a{
     .feature-text button{
         margin-left: 28%;
         /* width: 50%; */
+    }
+}
+
+/* Medium Devices */
+
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
+    .feature{
+        grid-template-columns: 1fr;
+        padding: 2rem 2rem 3rem;
+    }
+
+    .feature-text{
+        margin-left: 1.5rem;
+    }
+
+    .feature-text h3{
+        border-left: 5px solid var(--btn-color);;
+        padding-left: 1rem;
+    }
+}
+
+/* Love & Enjoy Section */
+
+.love-enjoy{
+    padding-top: 100px;
+}
+
+.lne{
+    margin: 0 6rem 2.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7rem;
+    align-items: center;
+}
+
+.enjoy{
+    display: grid;
+    padding: 3rem 0 0;
+}
+
+.enjoy h3{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--dark-1);
+    padding: 0 5rem 0 1.25rem;
+    border-left: 5px solid var(--btn-color);
+    margin-bottom: 1.5rem;
+}
+
+.enjoy p{
+    margin-bottom: 1.5rem;
+}
+
+.enjoy-card{
+    padding: 1.8rem 1.8rem 0 ;
+    width: 88%;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.25rem;
+}
+
+.enjoy-card h4{
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--dark-1);
+}
+
+.love{
+    position: relative;
+}
+
+.love img{
+    width: 100%;
+    z-index: 2;
+}
+
+.exp10{
+    padding: 2.5rem 2.25rem 2.5rem;
+    background-color: var(--btn-color);
+    color: white;
+    border-radius: 5px;
+    width: 11rem;
+    text-align: center;
+    position: relative;
+    top: -92px;
+    left: -75px;
+    z-index: 1;
+}
+
+.exp10 h1{
+    font-size: 2.85rem;
+    font-weight: 600;
+}
+
+/* Small Devices */
+
+@media screen and (max-width: 573px) {
+    .love-enjoy{
+    padding-top: 0;
+    }
+
+    .lne{
+    margin: 4rem 3rem 2.8rem;
+    grid-template-columns: 1fr;
+    gap: 0;
+    }
+    
+    .love{
+        order: 1;
+    }
+
+    .enjoy{
+        order: 2;
+        padding: 0;
+    }
+
+    .enjoy h3{
+        font-size: 2rem;
+    }
+
+    .exp10{
+        top: -65px;
+        left: 25%;
+        padding: 1.75rem 0.25rem 2rem;
+    }
+
+    .exp10 h1{
+    font-size: 2rem;
+    font-weight: 600;
+    }
+}
+
+/* Medium Devices */
+
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
+    .love-enjoy{
+    padding-top: 0;
+    }
+
+    .lne{
+    margin: 4rem 3rem 2.8rem;
+    grid-template-columns: 1fr;
+    gap: 0;
+    }
+    
+    .love{
+        order: 1;
+    }
+
+    .love img{
+        width: 75%;
+        padding-left: 4.5rem;
+    }
+
+    .enjoy{
+        order: 2;
+        padding: 0;
+        margin-left: 1.5rem;
+    }
+
+    .enjoy h3{
+        font-size: 2.75rem;
+    }
+
+    .exp10{
+        top: -65px;
+        left: 33%;
+        padding: 1.75rem 0.25rem 2rem;
+    }
+
+    .exp10 h1{
+    font-size: 2rem;
+    font-weight: 600;
     }
 }
