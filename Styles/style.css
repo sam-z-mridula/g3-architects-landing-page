@@ -477,7 +477,7 @@ nav a{
 .sponsors{
     margin: 0 4rem;
     text-align: center;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 .sponsors-text p{
@@ -534,4 +534,17 @@ nav a{
     width: 50%;
     margin: 0 auto;
     }
+}
+
+/* Footer Section */
+
+.foot{
+    margin: 0 4rem 10rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    padding: 2rem;
+}
+
+.foot p{
+    color: var(--dark-2);
 }
