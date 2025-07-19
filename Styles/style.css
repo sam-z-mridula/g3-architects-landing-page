@@ -16,6 +16,13 @@
 
 /* Common Properties */
 
+.section-title{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--dark-1);
+    margin-bottom: 1.5rem;
+}
+
 .para{
     color: var(--dark-3);
     font-size: 0.9rem;
@@ -205,13 +212,9 @@ nav a{
         width: 100%;
     }
 
-    .feature-text{
-        text-align: center;
-    }
-
-    .feature-text button{
-        margin-left: 28%;
-        /* width: 50%; */
+    .feature-text h3{
+        border-left: 5px solid var(--btn-color);
+        padding-left: 1.5rem;
     }
 }
 
@@ -240,7 +243,7 @@ nav a{
 }
 
 .lne{
-    margin: 0 6rem 2.8rem;
+    margin: 0 4rem 2.8rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 7rem;
@@ -330,6 +333,8 @@ nav a{
 
     .enjoy h3{
         font-size: 2rem;
+        /* text-align: center;
+        border: none; */
     }
 
     .exp10{
@@ -346,7 +351,7 @@ nav a{
 
 /* Medium Devices */
 
-@media screen and (min-width: 576px) and (max-width: 991.98px) {
+@media screen and (min-width: 573px) and (max-width: 991.98px) {
     .love-enjoy{
     padding-top: 0;
     }
@@ -385,5 +390,84 @@ nav a{
     .exp10 h1{
     font-size: 2rem;
     font-weight: 600;
+    }
+}
+
+/* Facts Section */
+
+.facts{
+    padding:  4rem 4rem 2.8rem;
+}
+
+#facts-para{
+    width: 40%;
+}
+
+.facts-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 0 3rem;
+}
+
+.facts-info{
+    text-align: center;
+    border: 1px solid var(--btn-color);
+    border-radius: 8px;
+    padding: 2.5rem 0 3rem;
+    width: 90%;
+}
+
+.facts-cards-title{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--dark-2);
+}
+
+.facts-cards-para{
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--dark-3);
+}
+
+.facts-info img{
+    width: 2.5rem;
+}
+
+/* Small Devices */
+
+@media screen and (max-width: 573px)  {
+
+    #facts-title{
+        border-left: 5px solid var(--btn-color);
+        padding-left: 1.5rem;
+    }
+
+    #facts-para{
+    width: 100%;
+    }
+
+    .facts-cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Medium Devices */
+
+@media screen and (min-width: 573px) and (max-width: 991.98px) {
+
+    #facts-para{
+    width: 85%;
+    }
+
+    .facts-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #facts-title{
+        border-left: 5px solid var(--btn-color);
+        padding-left: 1.5rem;
     }
 }
